@@ -13,7 +13,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="relative w-full overflow-hidden py-2 md:py-36"
+      className="relative w-full overflow-hidden py-24 md:py-36"
       style={{ background: "#0a0a0a" }}
     >
       {/* Ambient glow */}
@@ -120,7 +120,6 @@ export default function ContactSection() {
             ))}
           </div>
         </ScrollReveal>
-http://localhost:3000/#
         {/* Divider + Footer */}
         <ScrollReveal delay={0.5}>
           <div className="mt-20 border-t border-white/10 pt-8">
