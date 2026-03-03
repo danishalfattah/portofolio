@@ -3,13 +3,64 @@ import AboutSection from "@/components/AboutSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://danishalfattah.site/#website",
+      url: "https://danishalfattah.site",
+      name: "Danish Alfattah",
+      description:
+        "Portfolio of Muhammad Danish Alfattah Lubis — Software Developer & CS Student at University of Brawijaya.",
+      publisher: {
+        "@id": "https://danishalfattah.site/#person",
+      },
+    },
+    {
+      "@type": "Person",
+      "@id": "https://danishalfattah.site/#person",
+      name: "Muhammad Danish Alfattah Lubis",
+      url: "https://danishalfattah.site",
+      jobTitle: "Software Developer",
+      description:
+        "Software Developer & Computer Science Student at University of Brawijaya specializing in web and mobile development.",
+      alumniOf: {
+        "@type": "CollegeOrUniversity",
+        name: "University of Brawijaya",
+      },
+      sameAs: [
+        "https://github.com/danishalfattah",
+        "https://www.linkedin.com/in/danishalfattah/",
+        "https://www.instagram.com/danishalfattah/",
+      ],
+      knowsAbout: [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Kotlin",
+        "Node.js",
+        "Firebase",
+        "MongoDB",
+      ],
+    },
+  ],
+};
+
 export default function Home() {
   return (
-    <main>
-      <HeroSection />
-      <AboutSection />
-      <ProjectsSection />
-      <ContactSection />
-    </main>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <ProjectsSection />
+        <ContactSection />
+      </main>
+    </>
   );
 }
