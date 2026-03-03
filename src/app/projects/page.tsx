@@ -58,7 +58,7 @@ export default function ProjectsPage() {
             style={{ fontFamily: "'Inter', sans-serif" }}
           >
             A curated collection of my selected works spanning brand identity,
-            web design, mobile apps, and product design.
+            web design, mobile apps, and etc.
           </p>
         </ScrollReveal>
 
