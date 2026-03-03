@@ -27,7 +27,7 @@ export const projects: Project[] = [
             "Developed an intelligent platform designed to optimize job applications. The system leverages Google Gemini AI to analyze resumes against job descriptions, providing real-time scoring (0-100) and actionable feedback. It features a dynamic PDF generation engine that creates ATS-friendly resumes instantly, streamlining the job-seeking process with modern automation.",
         client: "Personal Project",
         role: "Fullstack Developer",
-        duration: "3 months",
+        duration: "2 months",
         tools: ["Next.js", "TypeScript", "Google Gemini API", "Firebase", "React PDF"],
         highlights: [
             "Built AI-powered CV analysis engine with real-time scoring (0-100) and actionable feedback",
@@ -49,7 +49,7 @@ export const projects: Project[] = [
             "Designed and developed a high-fidelity frontend prototype for a citizen reporting system. The project focuses on advanced UI/UX patterns, utilizing a custom Glassmorphism design system and smooth animations with Framer Motion. It features an interactive map interface for pinning report locations, ensuring a seamless and responsive user experience across devices.",
         client: "Community Project",
         role: "Frontend Engineer",
-        duration: "3 months",
+        duration: "1 months",
         tools: ["Next.js", "Framer Motion", "Google Maps API", "Tailwind CSS"],
         highlights: [
             "Designed custom Glassmorphism design system with advanced UI/UX patterns",
@@ -71,7 +71,7 @@ export const projects: Project[] = [
             "Created an immersive 3D web experience for showcasing gym equipment. Leveraging Astro's Island Architecture, the project achieves high-performance loading scores while rendering complex 3D models interactively in the browser. It demonstrates advanced skills in WebGL and creative coding, bridging the gap between web performance and high-fidelity visuals.",
         client: "Academic Project",
         role: "Frontend Developer",
-        duration: "3 months",
+        duration: "2 months",
         tools: ["Astro", "React Three Fiber (R3F)", "Three.js", "WebGL"],
         highlights: [
             "Built interactive 3D gym equipment models with real-time rotation and zoom",
@@ -114,7 +114,7 @@ export const projects: Project[] = [
             "Led the digital transformation initiative for Slamparejo Village during the Community Service Program (KKN). Developed a responsive official website with a custom Content Management System (CMS), empowering village officials to manage news, administrative data, and public information independently without technical assistance. This project improved information transparency and public service accessibility.",
         client: "Desa Slamparejo",
         role: "Fullstack Developer",
-        duration: "3 months",
+        duration: "1 months",
         tools: ["Next.js", "Custom CMS", "REST API"],
         highlights: [
             "Built custom CMS enabling non-technical village staff to manage content independently",
@@ -135,7 +135,7 @@ export const projects: Project[] = [
             "Built a comprehensive financial literacy and management application aimed at Gen Z. The platform features intuitive budgeting tools, expense tracking, and interactive data visualization to help users understand their cash flow. Implemented complex logic for financial health scoring and goal tracking, demonstrating a strong grasp of fintech product requirements.",
         client: "Academic Project",
         role: "Frontend Engineer",
-        duration: "2 months",
+        duration: "1 months",
         tools: ["Next.js", "TypeScript", "Tailwind CSS"],
         highlights: [
             "Built intuitive budgeting tools and expense tracking features",
