@@ -9,6 +9,7 @@ const skills = [
   "Next.js",
   "Tailwind CSS",
   "TypeScript",
+  "Java",
   "Kotlin",
   "Figma",
   "Express.js",
@@ -49,7 +50,7 @@ export default function AboutSection() {
           </p>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-10 lg:grid-cols-12 lg:gap-16">
+        <div className="grid  grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-10 lg:grid-cols-12 lg:gap-16">
           {/* Left — Portrait with Profile Card */}
           <ScrollReveal direction="left" className="w-full lg:col-span-5 relative z-10">
             <PortraitSpotlight />
