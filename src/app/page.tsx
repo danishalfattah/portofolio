@@ -12,7 +12,7 @@ const jsonLd = {
       url: "https://danishalfattah.site",
       name: "Danish Alfattah",
       description:
-        "Portfolio of Muhammad Danish Alfattah Lubis — Software Developer & CS Student at University of Brawijaya.",
+        "Portfolio of Muhammad Danish Alfattah Lubis — Informatics Engineering at University of Brawijaya.",
       publisher: {
         "@id": "https://danishalfattah.site/#person",
       },
@@ -24,7 +24,7 @@ const jsonLd = {
       url: "https://danishalfattah.site",
       jobTitle: "Software Developer",
       description:
-        "Software Developer & Computer Science Student at University of Brawijaya specializing in web and mobile development.",
+        "Informatics Engineering Student at University of Brawijaya specializing in web and mobile development.",
       alumniOf: {
         "@type": "CollegeOrUniversity",
         name: "University of Brawijaya",
