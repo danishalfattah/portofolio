@@ -40,15 +40,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://danishalfattah.site",
     siteName: "Danish Alfattah",
-    title: "Danish Alfattah — Software Developer & Portfolio",
+    title: "Danish Alfattah — Portfolio",
     description:
-      "Portfolio of Muhammad Danish Alfattah Lubis — Software Developer & CS Student at University of Brawijaya. Explore projects in web development, mobile apps, and AI.",
+      "Portfolio of Muhammad Danish Alfattah Lubis — Informatics Engineering Student at University of Brawijaya. Explore projects in web development, mobile apps, and AI.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Danish Alfattah — Software Developer & Portfolio",
+    title: "Danish Alfattah — Portfolio",
     description:
-      "Portfolio of Muhammad Danish Alfattah Lubis — Software Developer & CS Student at University of Brawijaya.",
+      "Portfolio of Muhammad Danish Alfattah Lubis — Informatics Engineering Student at University of Brawijaya.",
   },
   robots: {
     index: true,
