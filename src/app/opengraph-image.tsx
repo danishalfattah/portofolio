@@ -93,35 +93,6 @@ export default async function Image() {
         Informatics Engineering Student
       </div>
 
-      {/* Bottom bar with skills */}
-      <div
-        style={{
-          display: "flex",
-          gap: "12px",
-          flexWrap: "wrap",
-        }}
-      >
-        {["React", "Next.js", "TypeScript", "Tailwind CSS", "Kotlin"].map(
-          (skill) => (
-            <div
-              key={skill}
-              style={{
-                display: "flex",
-                padding: "8px 20px",
-                borderRadius: "999px",
-                border: "1px solid rgba(255,255,255,0.15)",
-                fontSize: "14px",
-                fontWeight: 500,
-                color: "rgba(255,255,255,0.7)",
-                letterSpacing: "0.1em",
-              }}
-            >
-              {skill}
-            </div>
-          ),
-        )}
-      </div>
-
       {/* Domain */}
       <div
         style={{
