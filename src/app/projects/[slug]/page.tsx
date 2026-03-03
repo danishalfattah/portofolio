@@ -59,7 +59,7 @@ export default function ProjectDetailPage({
         )}
 
         {/* Bottom gradient fade */}
-        <div className="absolute right-0 bottom-0 left-0 h-48 bg-gradient-to-t from-[#111] to-transparent" />
+        <div className="absolute right-0 bottom-0 left-0 h-48 bg-linear-to-t from-[#111] to-transparent" />
 
         {/* Content */}
         <div className="relative z-10 mx-auto w-full max-w-6xl px-6 md:px-12">
@@ -154,7 +154,7 @@ export default function ProjectDetailPage({
                 { label: "YEAR", value: project.year },
               ].map((meta, i) => (
                 <ScrollReveal key={meta.label} direction="right" delay={i * 0.1}>
-                  <div className="rounded-xl border border-white/10 bg-white/[0.03] p-5">
+                  <div className="rounded-xl border border-white/10 bg-white/3 p-5">
                     <p
                       className="mb-2 text-[9px] font-semibold tracking-[0.3em] uppercase text-white/35"
                       style={{ fontFamily: "'Inter', sans-serif" }}
@@ -174,7 +174,7 @@ export default function ProjectDetailPage({
 
             {/* Tools */}
             <ScrollReveal delay={0.4}>
-              <div className="mt-4 rounded-xl border border-white/10 bg-white/[0.03] p-5">
+              <div className="mt-4 rounded-xl border border-white/10 bg-white/3 p-5">
                 <p
                   className="mb-3 text-[9px] font-semibold tracking-[0.3em] uppercase text-white/35"
                   style={{ fontFamily: "'Inter', sans-serif" }}
@@ -213,7 +213,7 @@ export default function ProjectDetailPage({
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {project.highlights.map((highlight, i) => (
             <ScrollReveal key={i} delay={i * 0.12}>
-              <div className="group flex gap-5 rounded-xl border border-white/8 bg-white/[0.02] p-6 transition-colors hover:border-white/30 hover:bg-white/[0.05]">
+              <div className="group flex gap-5 rounded-xl border border-white/8 bg-white/2 p-6 transition-colors hover:border-white/30 hover:bg-white/5">
                 <span
                   className="shrink-0 text-3xl font-bold text-white/30 md:text-4xl"
                   style={{
@@ -245,7 +245,7 @@ export default function ProjectDetailPage({
           {prevProject ? (
             <Link
               href={`/projects/${prevProject.slug}`}
-              className="group flex items-center gap-4 border-b border-white/10 px-6 py-10 transition-colors hover:bg-white/[0.03] md:border-r md:border-b-0 md:px-12"
+              className="group flex items-center gap-4 border-b border-white/10 px-6 py-10 transition-colors hover:bg-white/3 md:border-r md:border-b-0 md:px-12"
             >
               <ArrowLeft className="h-5 w-5 shrink-0 text-white/40 transition-colors group-hover:text-white" />
               <div>
@@ -274,7 +274,7 @@ export default function ProjectDetailPage({
           {nextProject ? (
             <Link
               href={`/projects/${nextProject.slug}`}
-              className="group flex items-center justify-end gap-4 px-6 py-10 text-right transition-colors hover:bg-white/[0.03] md:px-12"
+              className="group flex items-center justify-end gap-4 px-6 py-10 text-right transition-colors hover:bg-white/3 md:px-12"
             >
               <div>
                 <p
