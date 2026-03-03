@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: "%s | Danish Alfattah",
   },
   description:
-    "Portfolio of Muhammad Danish Alfattah Lubis — Software Developer & Computer Science Student at University of Brawijaya. Explore projects in web development, mobile apps, and AI.",
+    "Portfolio of Muhammad Danish Alfattah Lubis — Informatics Engineering Student at University of Brawijaya. Explore projects in web development, mobile apps, and AI.",
   keywords: [
     "Danish Alfattah",
     "Muhammad Danish Alfattah Lubis",

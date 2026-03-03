@@ -90,7 +90,7 @@ export default async function Image() {
           marginBottom: "40px",
         }}
       >
-        Software Developer & CS Student
+        Informatics Engineering Student
       </div>
 
       {/* Bottom bar with skills */}
