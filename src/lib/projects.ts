@@ -25,7 +25,7 @@ export const projects: Project[] = [
         thumbnail: "/projects/cvjitu-thumb.png",
         description:
             "Developed an intelligent platform designed to optimize job applications. The system leverages Google Gemini AI to analyze resumes against job descriptions, providing real-time scoring (0-100) and actionable feedback. It features a dynamic PDF generation engine that creates ATS-friendly resumes instantly, streamlining the job-seeking process with modern automation.",
-        client: "Personal Project",
+        client: "Competition Project",
         role: "Fullstack Developer",
         duration: "2 months",
         tools: ["Next.js", "TypeScript", "Google Gemini API", "Firebase", "React PDF"],
@@ -47,7 +47,7 @@ export const projects: Project[] = [
         thumbnail: "/projects/lapor-warga-thumb.png",
         description:
             "Designed and developed a high-fidelity frontend prototype for a citizen reporting system. The project focuses on advanced UI/UX patterns, utilizing a custom Glassmorphism design system and smooth animations with Framer Motion. It features an interactive map interface for pinning report locations, ensuring a seamless and responsive user experience across devices.",
-        client: "Community Project",
+        client: "Competition Project",
         role: "Frontend Engineer",
         duration: "1 months",
         tools: ["Next.js", "Framer Motion", "Google Maps API", "Tailwind CSS"],
@@ -133,7 +133,7 @@ export const projects: Project[] = [
         thumbnail: "/projects/vestra-thumb.png",
         description:
             "Built a comprehensive financial literacy and management application aimed at Gen Z. The platform features intuitive budgeting tools, expense tracking, and interactive data visualization to help users understand their cash flow. Implemented complex logic for financial health scoring and goal tracking, demonstrating a strong grasp of fintech product requirements.",
-        client: "Academic Project",
+        client: "Competition Project",
         role: "Frontend Engineer",
         duration: "1 months",
         tools: ["Next.js", "TypeScript", "Tailwind CSS"],
