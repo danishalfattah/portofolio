@@ -1,6 +1,6 @@
 "use client";
 
-
+import { motion } from "motion/react";
 import RotatingText from "./RotatingText";
 import LogoLoop from "./LogoLoop";
 
@@ -14,6 +14,8 @@ const techStack = [
   { name: "MONGODB", url: "https://cdn.simpleicons.org/mongodb/ffffff" },
   { name: "TYPESCRIPT", url: "https://cdn.simpleicons.org/typescript/ffffff" },
 ];
+
+const ease = [0.25, 0.4, 0.25, 1] as const;
 
 export default function HeroSection() {
   const roles = [
@@ -32,9 +34,12 @@ export default function HeroSection() {
     >
       {/* ────────── AMBIENT BACKGROUND ────────── */}
       {/* Faint watermark name */}
-      <div
+      <motion.div
         aria-hidden
         className="pointer-events-none absolute inset-0 z-0 flex items-center justify-center select-none"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.2, delay: 0.3, ease }}
       >
         <span
           className="whitespace-nowrap text-white text-[28vw] leading-none uppercase"
@@ -46,7 +51,7 @@ export default function HeroSection() {
         >
           DANISH
         </span>
-      </div>
+      </motion.div>
 
       {/* Glowing blob — bottom‑right */}
       <div
@@ -61,18 +66,19 @@ export default function HeroSection() {
         style={{ background: "#333", filter: "blur(80px)" }}
       />
 
-
-
       {/* ────────── MAIN HERO CONTENT ────────── */}
       <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-4 md:px-12">
         {/* Massive headline */}
-        <h1
+        <motion.h1
           className="z-10 flex flex-col items-center justify-center text-center text-white uppercase leading-[0.9]"
           style={{
             fontFamily: "'Anton', sans-serif",
             fontSize: "clamp(3.5rem, 10vw, 160px)",
             letterSpacing: "0.04em",
           }}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5, ease }}
         >
           <RotatingText
             texts={roles}
@@ -86,14 +92,17 @@ export default function HeroSection() {
             transition={{ type: "spring", damping: 30, stiffness: 400 }}
             rotationInterval={3000}
           />
-        </h1>
-
-
+        </motion.h1>
 
         {/* ────── Floating elements ────── */}
 
         {/* Bottom‑left intro — positioned absolutely anchored to bottom left */}
-        <div className="absolute bottom-28 left-6 z-10 w-full max-w-[280px] text-left text-white md:bottom-28 md:left-12 md:max-w-xs">
+        <motion.div
+          className="absolute bottom-28 left-6 z-10 w-full max-w-[280px] text-left text-white md:bottom-28 md:left-12 md:max-w-xs"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.8, ease }}
+        >
           <p
             className="mb-1 text-[10px] font-semibold tracking-[0.3em] uppercase opacity-40"
             style={{ fontFamily: "'Inter', sans-serif" }}
@@ -108,13 +117,18 @@ export default function HeroSection() {
             Software Engineering enthusiast crafting high‑performance digital
             experiences.
           </p>
-        </div>
+        </motion.div>
 
         
       </div>
 
       {/* ────────── BRAND STRIP ────────── */}
-      <div className="absolute right-0 bottom-0 left-0 z-10 border-t border-white/10 py-5">
+      <motion.div
+        className="absolute right-0 bottom-0 left-0 z-10 border-t border-white/10 py-5"
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 1.0, ease }}
+      >
         <LogoLoop
           logos={techStack.map((tech) => ({
             node: (
@@ -139,7 +153,8 @@ export default function HeroSection() {
           gap={80}
           pauseOnHover={true}
         />
-      </div>
+      </motion.div>
     </section>
   );
 }
+

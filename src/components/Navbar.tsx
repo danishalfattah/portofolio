@@ -2,19 +2,27 @@
 
 import { ArrowUpRight } from "lucide-react";
 import { useEffect, useState } from "react";
+import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
+
+const fadeDown = {
+  hidden: { opacity: 0, y: -20 },
+  visible: (delay: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, delay, ease: [0.25, 0.4, 0.25, 1] as const },
+  }),
+};
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      // Check if scrolled more than 50px
       setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
-    // Initial check
     handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
@@ -30,16 +38,26 @@ export default function Navbar() {
       )}
     >
       {/* Logo */}
-      <a
+      <motion.a
         href="#"
         className="text-sm font-semibold tracking-[0.25em] text-white uppercase"
         style={{ fontFamily: "'Inter', sans-serif" }}
+        variants={fadeDown}
+        initial="hidden"
+        animate="visible"
+        custom={0}
       >
         ✱ DANISH
-      </a>
+      </motion.a>
 
       {/* Center links (desktop only) */}
-      <ul className="hidden items-center gap-8 md:flex">
+      <motion.ul
+        className="hidden items-center gap-8 md:flex"
+        variants={fadeDown}
+        initial="hidden"
+        animate="visible"
+        custom={0.1}
+      >
         {["ABOUT", "PROJECTS", "CONTACT"].map((link) => (
           <li key={link}>
             <a
@@ -51,10 +69,16 @@ export default function Navbar() {
             </a>
           </li>
         ))}
-      </ul>
+      </motion.ul>
 
       {/* Hire Me CTA */}
-      <div className="flex items-center gap-3">
+      <motion.div
+        className="flex items-center gap-3"
+        variants={fadeDown}
+        initial="hidden"
+        animate="visible"
+        custom={0.2}
+      >
         <span
           className="hidden text-xs font-medium tracking-[0.2em] text-white/70 uppercase sm:inline"
           style={{ fontFamily: "'Inter', sans-serif" }}
@@ -67,7 +91,8 @@ export default function Navbar() {
         >
           <ArrowUpRight className="h-4 w-4 text-white transition-colors duration-300 group-hover:text-[#111]" />
         </a>
-      </div>
+      </motion.div>
     </nav>
   );
 }
+
