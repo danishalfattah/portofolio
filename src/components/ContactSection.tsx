@@ -120,20 +120,6 @@ export default function ContactSection() {
             ))}
           </div>
         </ScrollReveal>
-        {/* Divider + Footer */}
-        <ScrollReveal delay={0.5}>
-          <div className="mt-20 border-t border-white/10 pt-8">
-            <div className="flex flex-col items-center justify-center gap-4 md:flex-row ">
-              <p
-                className="text-xs  tracking-[0.2em] text-white/20 uppercase"
-                style={{ fontFamily: "'Inter', sans-serif" }}
-              >
-                © 2025 DANISH ALFATTAH. ALL RIGHTS RESERVED.
-              </p>
-          
-            </div>
-          </div>
-        </ScrollReveal>
       </div>
     </section>
   );

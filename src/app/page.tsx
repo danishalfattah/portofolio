@@ -2,6 +2,8 @@ import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -56,11 +58,13 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <main>
+        <Navbar />
         <HeroSection />
         <AboutSection />
         <ProjectsSection />
         <ContactSection />
       </main>
+      <Footer />
     </>
   );
 }
