@@ -12,7 +12,7 @@ const jsonLd = {
       "@type": "WebSite",
       "@id": "https://danishalfattah.site/#website",
       url: "https://danishalfattah.site",
-      name: "Danish Alfattah",
+      name: "Muhammad Danish Alfattah Lubis",
       description:
         "Portfolio of Muhammad Danish Alfattah Lubis — Informatics Engineering at University of Brawijaya.",
       publisher: {

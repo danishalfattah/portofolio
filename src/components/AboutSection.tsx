@@ -52,7 +52,10 @@ export default function AboutSection() {
 
         <div className="grid  grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-10 lg:grid-cols-12 lg:gap-16">
           {/* Left — Portrait with Profile Card */}
-          <ScrollReveal direction="left" className="w-full lg:col-span-5 relative z-10">
+          <ScrollReveal
+            direction="left"
+            className="w-full lg:col-span-5 relative z-10"
+          >
             <PortraitSpotlight />
           </ScrollReveal>
 
@@ -79,9 +82,10 @@ export default function AboutSection() {
                 style={{ fontFamily: "'Inter', sans-serif" }}
               >
                 I am a Software Engineering enthusiast focused on crafting
-                high-performance digital experiences. With a strong foundation in
-                Computer Science and hands-on experience in full-stack
-                development, I prioritize building scalable and maintainable solutions that effectively address real-world challenges.
+                high-performance digital experiences. With a strong foundation
+                in Computer Science and hands-on experience in full-stack
+                development, I prioritize building scalable and maintainable
+                solutions that effectively address real-world challenges.
               </p>
             </ScrollReveal>
 

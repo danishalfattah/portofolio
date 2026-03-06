@@ -10,8 +10,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://danishalfattah.site"),
   title: {
-    default: "Danish Alfattah — Portfolio",
-    template: "%s | Danish Alfattah",
+    default: "Muhammad Danish Alfattah Lubis — Portfolio",
+    template: "%s | Muhammad Danish Alfattah Lubis",
   },
   description:
     "Portfolio of Muhammad Danish Alfattah Lubis — Informatics Engineering Student at University of Brawijaya. Explore projects in web development, mobile apps, and AI.",
@@ -39,14 +39,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://danishalfattah.site",
-    siteName: "Danish Alfattah",
-    title: "Danish Alfattah — Portfolio",
+    siteName: "Muhammad Danish Alfattah Lubis",
+    title: "Muhammad Danish Alfattah Lubis — Portfolio",
     description:
       "Portfolio of Muhammad Danish Alfattah Lubis — Informatics Engineering Student at University of Brawijaya. Explore projects in web development, mobile apps, and AI.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Danish Alfattah — Portfolio",
+    title: "Muhammad Danish Alfattah Lubis — Portfolio",
     description:
       "Portfolio of Muhammad Danish Alfattah Lubis — Informatics Engineering Student at University of Brawijaya.",
   },
